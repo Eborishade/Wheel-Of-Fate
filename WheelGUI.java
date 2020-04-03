@@ -1,3 +1,4 @@
+
 /**
  * @since April 1, 2020 
  * @author Emmanuel Borishade
@@ -65,7 +66,7 @@ public class WheelGUI extends Application{
         //Orientation/Positioning from: https://docs.oracle.com/javafx/2/layout/size_align.htm
         title.setWrappingWidth(300);
         //Font & Color: //from https://docs.oracle.com/javafx/2/text/jfxpub-text.htm
-        title.setFill(Color.WHITE); 
+        title.setFill(Color.BLUE); 
         title.setFont(Font.font ("Arial", 30));
         title.setTextAlignment(TextAlignment.CENTER);
 
@@ -74,13 +75,13 @@ public class WheelGUI extends Application{
         mutateButtons.setTileAlignment(Pos.CENTER);
         mutateButtons.setVgap(20);
         //Border from https://stackoverflow.com/questions/51279127/javafx-how-to-center-a-tilepane-but-place-the-tilepane-children-from-left-to-ri
-        mutateButtons.setStyle("-fx-border-color: blue; -fx-border-width: 1;");
+        mutateButtons.setStyle("-fx-border-color: blue; -fx-border-width: 2; -fx-padding: 15px");
 
         accessButtons.setPrefColumns(2);
         accessButtons.setOrientation(Orientation.HORIZONTAL); 
         accessButtons.setTileAlignment(Pos.CENTER);
         accessButtons.setVgap(20);
-        accessButtons.setStyle("-fx-border-color: blue; -fx-border-width: 1;");
+        accessButtons.setStyle("-fx-border-color: blue; -fx-border-width: 2; -fx-padding: 15px");
 
         textBox.setPrefHeight(50);
         textBox.setPrefWidth(40);
@@ -97,14 +98,14 @@ public class WheelGUI extends Application{
 
         HBox window = new HBox(); 
         window.getChildren().addAll(box1, box2, box3);
-
+ 
         
         //Group setup (in case future items are added)
         Group root = new Group(); 
         root.getChildren().addAll(window);
         
         //Scene Setup
-        Scene scene = new Scene(root, 1000, 500); //width, height
+        Scene scene = new Scene(root, 1025, 500); //width, height
         scene.setFill(Color.BLACK);
         scene.getStylesheets().add("stylesheet.css");//https://docs.oracle.com/javafx/2/css_tutorial/jfxpub-css_tutorial.htm
 
