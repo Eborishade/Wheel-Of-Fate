@@ -163,7 +163,7 @@ public class EList implements List210{
     }
 
     //if node is only node
-    if (node.getVal().equals(str)){
+    if (node.getVal().equals(str) && node.getNext() == null){
         head = null;
         return true;
     }
