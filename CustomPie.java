@@ -60,7 +60,7 @@ public class CustomPie{
         https://stackoverflow.com/questions/29500761/javafx-change-the-image-in-an-imageview
         status: SUCCESS!
         */
-        if (i == null || i[0].equals(" ") || i[0].equals("")){
+        if (i == null){
             pieData.clear();
             pieData.add(new PieChart.Data("[Empty]", 100));
         } else {
