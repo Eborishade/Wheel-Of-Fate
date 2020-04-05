@@ -125,14 +125,11 @@ public class CustomButtons{
      * @param CustomPie pie
      */
     private void add(TilePane pane, CustomPie pie){
-        //Add Button
         Button addButton = new Button("Add");
         addButton.setOnMouseClicked(new EventHandler<MouseEvent>(){ 
             public void handle(MouseEvent e) 
             {   
                 //use class buttonjobs to display a box for user input, add item to wheel, return wheel 
-
-                //simplified: Wheel = Buttonjobs.add(Wheel);   
                 ButtonJobs.add(ButtonJobs.getWheel());
                 
                 //Refresh Pie items - PieChart class is Observable, reset may be unnecessary, but still nice effect 
@@ -149,7 +146,6 @@ public class CustomButtons{
      * @param TilePane pane
      */
     private void name(TilePane pane){
-        //Name Button
         Button nameButton = new Button("Name");
         nameButton.setOnMouseClicked(new EventHandler<MouseEvent>(){ 
             public void handle(MouseEvent e) 
@@ -168,7 +164,6 @@ public class CustomButtons{
      * @param TilePane pane
      */
     private void print(TilePane pane){
-        //Print Button
         Button printButton = new Button("Print");
         printButton.setOnMouseClicked(new EventHandler<MouseEvent>(){ 
             public void handle(MouseEvent e) 
@@ -185,7 +180,6 @@ public class CustomButtons{
      * @param TilePane pane
      */
     private void size(TilePane pane){
-        //Size Button
         Button sizeButton = new Button("Size");
         sizeButton.setOnMouseClicked(new EventHandler<MouseEvent>(){ 
             public void handle(MouseEvent e) 
@@ -201,7 +195,6 @@ public class CustomButtons{
      * @param TilePane pane
      */
     private void first(TilePane pane){
-        //First Button
         Button firstButton = new Button("First item");
         firstButton.setOnMouseClicked(new EventHandler<MouseEvent>(){ 
             public void handle(MouseEvent e) 
@@ -217,7 +210,6 @@ public class CustomButtons{
      * @param TilePane pane
      */
     private void last(TilePane pane){
-        //Last Button
         Button lastButton = new Button("Last item");
         lastButton.setOnMouseClicked(new EventHandler<MouseEvent>(){ 
             public void handle(MouseEvent e) 
@@ -233,7 +225,6 @@ public class CustomButtons{
      * @param TilePane pane
      */
     private void random(TilePane pane){
-        //Random Button
         Button randomButton = new Button("Random item");
         randomButton.setOnMouseClicked(new EventHandler<MouseEvent>(){ 
             public void handle(MouseEvent e) 
@@ -250,7 +241,6 @@ public class CustomButtons{
      * @param CustomPie pie
      */
     private void spin(TilePane pane, CustomPie pie){
-        //Spin Button 
         Button spinButton = new Button("Spin Wheel");
         spinButton.setOnMouseClicked(new EventHandler<MouseEvent>(){ 
             public void handle(MouseEvent e) 
@@ -284,7 +274,6 @@ public class CustomButtons{
      * @param CustomPie pie
      */
     private void reload(TilePane pane, CustomPie pie){
-        //Reload Button
         Button reloadButton = new Button("Reload Wheel");
         reloadButton.setOnMouseClicked(new EventHandler<MouseEvent>(){ 
             public void handle(MouseEvent e) 
@@ -306,7 +295,6 @@ public class CustomButtons{
      * @param CustomPie pie
      */
     private void reverse(TilePane pane, CustomPie pie){
-        //Reverse Button
         Button reverseButton = new Button("Reverse Output");
         reverseButton.setOnMouseClicked(new EventHandler<MouseEvent>(){ 
             public void handle(MouseEvent e) 
@@ -328,7 +316,6 @@ public class CustomButtons{
      * @param CustomPie pie
      */
     private void clear(TilePane pane, CustomPie pie){
-        //Clear Button
         Button clearButton = new Button("Clear");
         clearButton.setOnMouseClicked(new EventHandler<MouseEvent>(){ 
             public void handle(MouseEvent e) 
