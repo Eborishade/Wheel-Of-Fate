@@ -70,18 +70,8 @@ public class WheelGUI extends Application{
         title.setFont(Font.font ("Arial", 30));
         title.setTextAlignment(TextAlignment.CENTER);
 
-        mutateButtons.setPrefColumns(2);
-        mutateButtons.setOrientation(Orientation.HORIZONTAL); 
-        mutateButtons.setTileAlignment(Pos.CENTER);
-        mutateButtons.setVgap(20);
-        //Border from https://stackoverflow.com/questions/51279127/javafx-how-to-center-a-tilepane-but-place-the-tilepane-children-from-left-to-ri
-        mutateButtons.setStyle("-fx-border-color: blue; -fx-border-width: 2; -fx-padding: 15px");
-
-        accessButtons.setPrefColumns(2);
-        accessButtons.setOrientation(Orientation.HORIZONTAL); 
-        accessButtons.setTileAlignment(Pos.CENTER);
-        accessButtons.setVgap(20);
-        accessButtons.setStyle("-fx-border-color: blue; -fx-border-width: 2; -fx-padding: 15px");
+        formatPane(mutateButtons);
+        formatPane(accessButtons);
 
         textBox.setPrefHeight(50);
         textBox.setPrefWidth(40);
@@ -114,6 +104,16 @@ public class WheelGUI extends Application{
         primaryStage.setScene(scene);
         primaryStage.show();
    }
+
+   private void formatPane(TilePane tile){
+        tile.setPrefColumns(2);
+        tile.setOrientation(Orientation.HORIZONTAL); 
+        tile.setTileAlignment(Pos.CENTER);
+        tile.setVgap(20);
+        //Border from https://stackoverflow.com/questions/51279127/javafx-how-to-center-a-tilepane-but-place-the-tilepane-children-from-left-to-ri
+        tile.setStyle("-fx-border-color: blue; -fx-border-width: 2; -fx-padding: 15px");
+   }
+
 
 }
 
