@@ -73,7 +73,6 @@ public class ButtonJobs{
      * @param Wheel w
      */
     public static void name(original.Wheel w){
-
         TextInputDialog dialog = new TextInputDialog("Name Wheel");
         dialog.setTitle("Name Your Wheel");
         dialog.setHeaderText("Name Your Wheel");
@@ -95,7 +94,6 @@ public class ButtonJobs{
      * @return String returning
      */
     public static String print(original.Wheel w){
-        //return all wheel items
         String returning = w.print();
         
         return returning; 
@@ -108,7 +106,6 @@ public class ButtonJobs{
      * @return String returning
      */
     public static String size(original.Wheel w){
-        //return wheel size
         String returning = Integer.toString(w.size());
         
         return returning; 
@@ -121,7 +118,6 @@ public class ButtonJobs{
      * @return String returning
      */
     public static String first(original.Wheel w){
-        //return first item in wheel
         String returning = w.first();
         
         return returning; 
@@ -134,7 +130,6 @@ public class ButtonJobs{
      * @return String returning
      */
     public static String last(original.Wheel w){
-        //return last item in wheel
         String returning = w.last();
         
         return returning; 
@@ -147,7 +142,6 @@ public class ButtonJobs{
      * @return String returning
      */
     public static String random(original.Wheel w){
-        //return random item in wheel
         String returning = (String) w.random();
         
         return returning; 
@@ -182,7 +176,6 @@ public class ButtonJobs{
      * @param Wheel w
      */
     public static void reverse(original.Wheel w){
-        //reverse items in wheel
         w.reverse();
     }
     
