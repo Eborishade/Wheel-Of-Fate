@@ -266,7 +266,6 @@ public class CustomButtons{
                 String[] items;
                 if (wheelItems == null){
                     items = null;
-                    pie.reset(items);
                 } else {
                     items = wheelItems.split(",");
                 }
